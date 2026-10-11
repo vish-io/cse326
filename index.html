@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroTrade|</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ElectroTrade</h1>
+        </div>
+
+        <nav>
+            <ul>
+                
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Browse">Browse</a></li>
+                <li><a href="#Sell">Sell</a></li>
+                <li><a href="#Howitworks">How it Works</a></li>
+                <li><a href="#Contact">Contact</a></li>
+
+            </ul>
+        </nav>
+
+        <div class="user-actions">
+            <button type="button">Login / Register</button>
+            <a href="#sell" class="button-sell"><button type="button">Post an Ad</button></a>
+        </div>
+
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+
+            <h2>Buy & Sell Certified Pre-Owned Gadgets Locally</h2>
+            <p>Find the best deals on smartphones, laptops, gaming consoles, and more.</p>
+            
+            <form action="/search" method="GET" class="search-bar">
+                <input type="text" name="query" placeholder="What gadget are you looking for today?" required>
+                <select name="category">
+                    <option value="all">All Categories</option>
+                    <option value="phones">Smartphones</option>
+                    <option value="laptops">Laptops & PCs</option>
+                    <option value="gaming">Gaming Consoles</option>
+                    <option value="audio">Audio & Accessories</option>
+                </select>
+                <button type="submit">Search</button>
+            </form>
+
+        </section>
+
+        <section class="categories">
+            <h2>Explore Categories</h2>
+            <div class="category-grid">
+                <div class="category-card"><h3>Smartphones</h3></div>
+                <div class="category-card"><h3>Laptops</h3></div>
+                <div class="category-card"><h3>Gaming</h3></div>
+                <div class="category-card"><h3>Audio</h3></div>
+            </div>
+        </section>
+
+        <section id="browse" class="featured-products">
+            <h2>Recent Listings</h2>
+            <div class="products-grid">
+                
+               
+                <article class="product-card">
+                    <span class="badge verification-status">Verified Seller</span>
+                    <img src="placeholder-iphone.jpg" alt="iPhone 13 Pro Max">
+                    <div class="product-info">
+                        <h3 class="product-price">₹42,500</h3>
+                        <h4 class="product-title">iPhone 13 Pro Max (128GB)</h4>
+                        <p class="product-location"> Sector 17, Chandigarh</p>
+                        <p class="product-date">Posted: 2 hours ago</p>
+                        <a href="/product-details.html"><button type="button">View Details</button></a>
+                    </div>
+                </article>
+
+
+                <article class="product-card">
+                    <span class="badge verification-status">Refurbished</span>
+                    <img src="placeholder-laptop.jpg" alt="Dell XPS 13">
+                    <div class="product-info">
+                        <h3 class="product-price">₹38,000</h3>
+                        <h4 class="product-title">Dell XPS 13 (8GB RAM / 256GB SSD)</h4>
+                        <p class="product-location"> Indiranagar, Bengaluru</p>
+                        <p class="product-date">Posted: 1 day ago</p>
+                        <a href="/product-details.html"><button type="button">View Details</button></a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="sell" class="sell-form-section">
+            <h2>Earn Cash: Sell Your Used Gadget</h2>
+            <p>Fill out the details below to list your item instantly on our marketplace.</p>
+            
+            <form action="/submit-ad" method="POST" enctype="multipart/form-data">
+                <label for="title">Listing Title:</label>
+                <input type="text" id="title" name="title" placeholder="e.g., PlayStation 4 Slim 500GB" required>
+
+                <label for="item-category">Category:</label>
+                <select id="item-category" name="category" required>
+                    <option value="">Select a Category</option>
+                    <option value="mobiles">Mobiles</option>
+                    <option value="laptops">Laptops</option>
+                    <option value="gaming">Gaming</option>
+                </select>
+
+                <label for="price">Expected Price (INR):</label>
+                <input type="number" id="price" name="price" placeholder="Enter amount" required>
+
+                <label for="condition">Device Condition:</label>
+                <select id="condition" name="condition" required>
+                    <option value="like-new">Like New (No Scratches)</option>
+                    <option value="good">Good (Light Sign of Use)</option>
+                    <option value="fair">Fair (Visible Scratches but Works)</option>
+                </select>
+
+                <label for="description">Item Description & Faults (if any):</label>
+                <textarea id="description" name="description" rows="5" placeholder="Mention battery health, age of device, included accessories..." required></textarea>
+
+                <label for="photos">Upload Device Photos:</label>
+                <input type="file" id="photos" name="photos" accept="image/*" multiple required>
+
+                <button type="submit">Submit Listing Ad</button>
+            </form>
+        </section>
+
+    
+
+
+
+    </main>
+    
+    <footer>
+        <div class="footer-links">
+            <div>
+                <h4>ElectroTrade</h4>
+                <p>The safest local peer-to-peer marketplace for tech lovers.</p>
+            </div>
+            <div>
+                <h4>Safety Tips</h4>
+                <ul>
+                    <li><a href="#">Avoid Advanced Payments</a></li>
+                    <li><a href="#">Meet in Public Places</a></li>
+                    <li><a href="#">Verify Device IMEI/Serial</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; 2026 ElectroTrade Marketplace. Semester-1 College Project.</p>
+    </footer>
+
+
+</body>
+</html>
