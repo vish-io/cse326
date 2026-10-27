@@ -1,1 +1,17 @@
-#soon
+#site_nav{
+    position: sticky;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#site_nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
