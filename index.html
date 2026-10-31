@@ -1,84 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ElectroTrade|</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <h1>ElectroTrade</h1>
-        </div>
+      <div class="logo">
+        <h1 class="logo_txt">ElectroTrade</h1>
+      </div>
 
-        <nav>
-            <ul>
-                
-                <li><a href="#home">Home</a></li>
-                <li><a href="#Browse">Browse</a></li>
-                <li><a href="#Sell">Sell</a></li>
-                <li><a href="#Howitworks">How it Works</a></li>
-                <li><a href="#Contact">Contact</a></li>
+      <nav id="site_nav">
+        <ul>
+          <li class="nav_item">
+            <a href="index.html" class="nav_link homepg_link">Home </a>
+          </li>
+          <li class="nav_item">
+            <a href="cart.html" class="nav_link cartpg_link">Cart</a>
+          </li>
+          <li class="nav_item">
+            <a href="seller.html" class="nav_link sellerpg_link">Sell</a>
+          </li>
+          <li class="nav_item">
+            <a href="#Contact" class="nav_link contactpg_link">Customer Care</a>
+          </li>
+        </ul>
+      </nav>
 
-            </ul>
-        </nav>
-
-        <div class="user-actions">
-            <button type="button">Login / Register</button>
-            <a href="#sell" class="button-sell"><button type="button">Post an Ad</button></a>
-        </div>
-
+      <div class="user-actions">
+        <button type="button">Login / Register</button>
+        <a href="#sell" class="button-sell"
+          ><button type="button">Post an Ad</button></a
+        >
+      </div>
     </header>
 
     <main>
-        <section id="home" class="hero">
+      <section id="home" class="hero">
+        <h2>Buy & Sell Certified Pre-Owned Gadgets Locally</h2>
+        <p>
+          Find the best deals on smartphones, laptops, gaming consoles, and
+          more.
+        </p>
 
-            <h2>Buy & Sell Certified Pre-Owned Gadgets Locally</h2>
-            <p>Find the best deals on smartphones, laptops, gaming consoles, and more.</p>
-            
-            <form action="/search" method="GET" class="search-bar">
-                <input type="text" name="query" placeholder="What gadget are you looking for today?" required>
-                <select name="category">
-                    <option value="all">All Categories</option>
-                    <option value="phones">Smartphones</option>
-                    <option value="laptops">Laptops & PCs</option>
-                    <option value="gaming">Gaming Consoles</option>
-                    <option value="audio">Audio & Accessories</option>
-                </select>
-                <button type="submit">Search</button>
-            </form>
+        <form action="/search" method="GET" class="search-bar">
+          <input
+            type="text"
+            name="query"
+            placeholder="What gadget are you looking for today?"
+            required
+          />
+          <select name="category">
+            <option value="all">All Categories</option>
+            <option value="phones">Smartphones</option>
+            <option value="laptops">Laptops & PCs</option>
+            <option value="gaming">Gaming Consoles</option>
+            <option value="audio">Audio & Accessories</option>
+          </select>
+          <button type="submit">Search</button>
+        </form>
+      </section>
+      <div class="isw" style="height: 900px;">
 
-        </section>
+      </div>
 
-
-       <!-- Additional sections like Browse, Sell, How it Works, and Contact can be added here -->
-
-    
-
-
-
+      <!-- Additional sections like Browse, Sell, How it Works, and Contact will be added here -->
     </main>
-    
+
     <footer>
-        <div class="footer-links">
-            <div>
-                <h4>ElectroTrade</h4>
-                <p>The safest local peer-to-peer marketplace for tech lovers.</p>
-            </div>
-            <div>
-                <h4>Safety Tips</h4>
-                <ul>
-                    <li><a href="#">Avoid Advanced Payments</a></li>
-                    <li><a href="#">Meet in Public Places</a></li>
-                    <li><a href="#">Verify Device IMEI/Serial</a></li>
-                </ul>
-            </div>
+      <div class="footer-links">
+        <div>
+          <h4>ElectroTrade</h4>
+          <p>The safest local peer-to-peer marketplace for tech lovers.</p>
         </div>
-        <hr>
-        <p class="copyright">&copy; 2026 ElectroTrade Marketplace. Semester-1 College Project.</p>
+        <div>
+          <h4>Safety Tips</h4>
+          <ul>
+            <li><a href="#">Verify Payments</a></li>
+            <li><a href="#">Wipe Data Before Selling</a></li>
+            <li><a href="#">Verify Device IMEI/Serial</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">
+        &copy; 2026 ElectroTrade Marketplace. Semester-1 College Project.
+      </p>
     </footer>
-
-
-</body>
+  </body>
 </html>
