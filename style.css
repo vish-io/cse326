@@ -1,1 +1,298 @@
-#style.css soon
+
+/* ELECTROTRADE - MODERN TECH THEME */
+
+:root {
+    --yellow: #E8C547;
+    --navy: #30323D;
+    --slate: #4D5061;
+    --blue: #5C80BC;
+    --light: #CDD1C4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--light);
+    color: var(--navy);
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background: var(--navy);
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.logo h1 {
+    color: var(--yellow);
+    font-size: 29px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+/* NAVIGATION */
+
+nav ul {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--light);
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--yellow);
+}
+
+/* HEADER BUTTONS */
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-actions button {
+    padding: 11px 18px;
+    background: transparent;
+    border: 1px solid var(--blue);
+    border-radius: 8px;
+    color: var(--light);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.user-actions button:hover {
+    background: var(--blue);
+    color: var(--navy);
+}
+
+.button-sell button {
+    background: var(--yellow);
+    color: var(--navy);
+    border-color: var(--yellow);
+}
+
+.button-sell button:hover {
+    background: var(--light);
+    border-color: var(--light);
+    transform: translateY(-2px);
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 600px;
+    padding: 110px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #CDD1C4 0%,
+        #5C80BC 100%
+    );
+}
+
+.hero h2 {
+    font-size: clamp(32px, 5vw, 52px);
+    max-width: 850px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--navy);
+    margin-bottom: 22px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 650px;
+    color: var(--navy);
+    margin-bottom: 40px;
+}
+
+/* SEARCH BAR */
+
+.search-bar {
+    display: flex;
+    width: 100%;
+    max-width: 850px;
+    gap: 10px;
+    padding: 12px;
+
+    background: var(--light);
+    border-radius: 14px;
+
+    box-shadow: 0 12px 35px rgba(48,50,61,0.18);
+}
+
+.search-bar input {
+    flex: 1;
+    min-width: 0;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--navy);
+    font-size: 15px;
+}
+
+.search-bar input::placeholder {
+    color: var(--slate);
+}
+
+.search-bar select {
+    padding: 12px;
+    border: 1px solid var(--blue);
+    border-radius: 8px;
+    background: var(--light);
+    color: var(--navy);
+    cursor: pointer;
+}
+
+.search-bar button {
+    padding: 14px 30px;
+    background: var(--yellow);
+    border: none;
+    border-radius: 8px;
+    color: var(--navy);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-bar button:hover {
+    background: var(--navy);
+    color: var(--yellow);
+    transform: translateY(-2px);
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--navy);
+    color: var(--light);
+    padding: 55px 8% 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 35px;
+}
+
+.footer-links > div {
+    max-width: 350px;
+}
+
+.footer-links h4 {
+    font-size: 21px;
+    color: var(--yellow);
+    margin-bottom: 15px;
+}
+
+.footer-links p {
+    font-size: 14px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--light);
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--yellow);
+}
+
+footer hr {
+    border: none;
+    height: 1px;
+    background: var(--slate);
+    margin-bottom: 20px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 75px 20px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar input,
+    .search-bar select,
+    .search-bar button {
+        width: 100%;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+}
